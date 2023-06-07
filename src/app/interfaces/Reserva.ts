@@ -1,10 +1,10 @@
 export interface Reserva{
     nombreCliente:string,
-    apellidoCliente:string,
-    telefono:number,
-    fechaInicio:Date,
-    fechaFin:Date,
-    cantidadPersona:number,
+    ApellidoCliente:string,
+    telefonoCliente:number,
+    fechaInicioReserva:Date,
+    fechaFinReserva:Date,
+    numeroPersonas:number,
     idHabitacion:string,
-    costoReserva ? :number
+    costo ? :number
 }

@@ -2,10 +2,9 @@
 <div class="container my-5">
     <div class="row">
         <div class="col-12 col-md-8">
-            <h2>Registro en el sistema</h2>
+            <h2>Registro de habitación en el sistema</h2>
             <hr>
             <form [formGroup]="formulario" (ngSubmit)="procesarDatos()">
-
                 <div class="mb-3">
                     <label class="form-label">Nombre: </label>
                     <input type="text" class="form-control" formControlName="nombre">
@@ -15,18 +14,17 @@
                     <input type="text" class="form-control" formControlName="foto">
                 </div>
                 <div class="mb-3">
-                    <label class="form-label">Descripcion: </label>
+                    <label class="form-label">Descripción: </label>
                     <input type="text" class="form-control" formControlName="descripcion">
                 </div>
                 <div class="mb-3">
-                    <label class="form-label">PrecioNoche: </label>
+                    <label class="form-label">Precio por Noche: </label>
                     <input type="number" class="form-control" formControlName="precioNoche">
                 </div>
                 <div class="mb-3">
                     <label class="form-label">Cantidad Maxima: </label>
                     <input type="number" class="form-control" formControlName="cantidadMaxima">
                 </div>
-
                 <button type="submit" class="btn btn-primary w-100">Registrar</button>
             </form>
         </div>

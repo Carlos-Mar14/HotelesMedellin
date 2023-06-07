@@ -1,0 +1,35 @@
+<div class="container my-5" id="reservation">
+  <div class="row">
+    <div class="col-12">
+      <h2 class="text-center subtitle">Estas son nuestras reservas:</h2>
+    </div>
+  </div>
+  <div class="row my-5">
+    <table class="table table-hover mt-5 mb-5">
+      <thead>
+        <tr>
+          <th scope="col">Nombre</th>
+          <th scope="col">Apellido</th>
+          <th scope="col">Telefono</th>
+          <th scope="col">Fecha de ingreso</th>
+          <th scope="col">Fecha de salida</th>
+          <th scope="col">Huespedes</th>
+          <th scope="col">Id Habitación</th>
+          <th scope="col">Costo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="col" *ngFor="let reservas of reservas; let iControl = index">
+          <td>{{reservas.nombreCliente}}</td>
+          <td>{{reservas.ApellidoCliente}}</td>
+          <td>{{reservas.telefonoCliente}}</td>
+          <td>{{reservas.fechaInicioReserva | date:'yyyy-MM-dd'}}</td>
+          <td>{{reservas.fechaFinReserva | date:'yyyy-MM-dd'}}</td>
+          <td>{{reservas.numeroPersonas}}</td>
+          <td>{{reservas.idHabitacion}}</td>
+          <td>{{reservas.costo}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
