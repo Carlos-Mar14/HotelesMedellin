@@ -19,15 +19,15 @@
         </tr>
       </thead>
       <tbody>
-        <tr class="col" *ngFor="let reservas of reservas; let iControl = index">
-          <td>{{reservas.nombreCliente}}</td>
-          <td>{{reservas.ApellidoCliente}}</td>
-          <td>{{reservas.telefonoCliente}}</td>
-          <td>{{reservas.fechaInicioReserva | date:'yyyy-MM-dd'}}</td>
-          <td>{{reservas.fechaFinReserva | date:'yyyy-MM-dd'}}</td>
-          <td>{{reservas.numeroPersonas}}</td>
-          <td>{{reservas.idHabitacion}}</td>
-          <td>{{reservas.costo}}</td>
+        <tr class="col" *ngFor="let reserva of reservas">
+          <td>{{reserva.nombreCliente}}</td>
+          <td>{{reserva.ApellidoCliente}}</td>
+          <td>{{reserva.telefonoCliente}}</td>
+          <td>{{reserva.fechaInicioReserva | date:'yyyy-MM-dd'}}</td>
+          <td>{{reserva.fechaFinReserva | date:'yyyy-MM-dd'}}</td>
+          <td>{{reserva.numeroPersonas}}</td>
+          <td>{{reserva.idHabitacion}}</td>
+          <td>{{reserva.costo}}</td>
         </tr>
       </tbody>
     </table>

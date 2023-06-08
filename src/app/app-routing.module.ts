@@ -7,7 +7,6 @@ import { FormularioreservaComponent } from './formularioreserva/formularioreserv
 const routes: Routes = [
   {path:"", component:HomeComponent, pathMatch:"full"},
   {path:"registrohabitacion", component:FormulariohabitacionComponent},
-  {path:"", component:HomeComponent, pathMatch:"full"},
   {path:"crearreserva", component:FormularioreservaComponent}
 ];
 

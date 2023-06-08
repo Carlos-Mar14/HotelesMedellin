@@ -5,44 +5,38 @@
             <h2>Registro de reserva en el sistema</h2>
             <hr>
             <form [formGroup]="formularioReserva" (ngSubmit)="procesarDatos()">
-                <div class="mb-3">
+                <div class="mb-3 form-check">
                     <label class="form-label">Nombre: </label>
                     <input type="text" class="form-control" formControlName="nombreCliente">
                 </div>
-                <div class="mb-3">
+                <div class="mb-3 form-check">
                     <label class="form-label">Apellido: </label>
                     <input type="text" class="form-control" formControlName="ApellidoCliente">
                 </div>
-                <div class="mb-3">
+                <div class="mb-3 form-check">
                     <label class="form-label">Telefono: </label>
                     <input type="number" class="form-control" formControlName="telefonoCliente">
                 </div>
-                <div class="mb-3">
+                <div class="mb-3 form-check">
                     <label class="form-label">Fecha de entrada: </label>
                     <input type="date" class="form-control" formControlName="fechaInicioReserva">
                 </div>
-                <div class="mb-3">
+                <div class="mb-3 form-check">
                     <label class="form-label">Fecha de salida: </label>
                     <input type="date" class="form-control" formControlName="fechaFinReserva">
                 </div>
-                <div class="mb-3">
+                <div class="mb-3 form-check">
                     <label class="form-label">numero de huespedes: </label>
                     <input type="number" class="form-control" formControlName="numeroPersonas">
                 </div>
-                <div class="mb-3">
+                <div class="mb-3 form-check">
                     <label class="form-label">Id Habitación : </label>
                     <input type="number" class="form-control" formControlName="idHabitacion">
                 </div>
-                <div class="mb-3">
+                <div class="mb-3 form-check">
                     <label class="form-label">Costo de reserva: </label>
                     <input type="number" class="form-control" formControlName="costo">
                 </div>
-                <!-- <div class="my-5">
-                    <label class="form-label"> Room  </label>
-                    <select name="" id="" formControlName="idHabitacionReserva" class="dropdown-toggle ms-4 control">
-                        <option value="{{habitacion._id}}" *ngFor="let habitacion of habitacion" > {{habitacion.nombre}}</option>
-                    </select>
-                </div> -->
                 <button type="submit" class="btn btn-primary w-100">Registrar</button>
             </form>
         </div>
